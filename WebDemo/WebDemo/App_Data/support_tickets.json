@@ -1,0 +1,20 @@
+[
+  {
+    "fullName": "Nguyễn Thị My",
+    "phone": "0987654321",
+    "email": "Myy@gmail.com",
+    "category": "Tư vấn sản phẩm & Hướng dẫn đặt hàng",
+    "content": "Tư vấn chọn size váy theo chiều cao 1m60",
+    "createdAt": "05-11-2026 10:04:31",
+    "status": "Tiếp nhận thành công (Đang xử lý)"
+  },
+  {
+    "fullName": "Nguyễn Thị My",
+    "phone": "0987654321",
+    "email": "Myy@gmail.com",
+    "category": "Tư vấn sản phẩm & Hướng dẫn đặt hàng",
+    "content": "Tư vấn chọn size váy theo chiều cao 1m60",
+    "createdAt": "05-11-2026 09:58:24",
+    "status": "Tiếp nhận thành công (Đang xử lý)"
+  }
+]

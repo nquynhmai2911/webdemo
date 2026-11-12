@@ -1,0 +1,51 @@
+/* css/style.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Utilities & Animations */
+@layer utilities {
+    .floating-animation {
+        animation: float 3s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-15px); }
+        100% { transform: translateY(0px); }
+    }
+
+    .fly-to-cart {
+        position: fixed;
+        z-index: 1000;
+        transition: all 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        opacity: 0.8;
+    }
+}
+
+/* Scrollbar customization */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+    background: #c1c1c1; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8; 
+}
+
+/* Custom styles for Admin table to look clean */
+.admin-table th {
+    @apply bg-gray-50 text-gray-500 font-medium text-sm tracking-wider uppercase py-3 px-6 text-left border-b;
+}
+.admin-table td {
+    @apply py-4 px-6 border-b text-sm text-gray-700 whitespace-nowrap;
+}

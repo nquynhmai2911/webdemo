@@ -1,0 +1,13 @@
+{
+  "HAadmin": {
+    "dashboard": true,
+    "orders": false,
+    "revenue": false,
+    "products": false,
+    "inventory": false,
+    "categories": false,
+    "users": false,
+    "storefront": false,
+    "menu_management": true
+  }
+}

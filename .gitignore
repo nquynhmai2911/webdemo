@@ -1,0 +1,43 @@
+## ==============================================================================
+## GITIGNORE FOR ASP.NET MVC (.NET FRAMEWORK) & VISUAL STUDIO
+## ==============================================================================
+
+# User-specific files & Visual Studio Cache
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+*.launchSettings.json
+
+# Build results & Binaries
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+*.dll
+*.exe
+*.pdb
+*.lib
+*.exp
+*.ilk
+
+# NuGet Packages (Restored automatically by Visual Studio / nuget restore)
+packages/
+*.nupkg
+
+# Temporary & Local Backup Folders
+_Backup_Old_Static/
+_Old_Scripts/
+*.bak
+*.temp
+*.tmp
+*.log
+
+# Windows OS metadata
+Thumbs.db
+ehthumbs.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+

@@ -1,0 +1,12 @@
+{
+  "all": {
+    "orders": true,
+    "products": true,
+    "inventory": true
+  },
+  "nhanvien1": {
+    "orders": true,
+    "products": true,
+    "inventory": true
+  }
+}

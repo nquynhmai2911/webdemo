@@ -1,0 +1,14 @@
+{
+  "mode": "gradient",
+  "tag": "Siêu khuyến mãi",
+  "title": "Ngày hội\nSiêu Sale 50%",
+  "description": "",
+  "buttonText": "Mua Ngay",
+  "buttonLink": "#flash-sale-products",
+  "iconClass": "fas fa-hamburger",
+  "gradientFrom": "#ff5722",
+  "gradientTo": "#ff8a50",
+  "imageUrl": "",
+  "imageLink": "#flash-sale-products",
+  "updatedAt": "05-11-2026 20:21:57"
+}

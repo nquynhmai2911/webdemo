@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0c9e96dee73741bfa97c0762cd03760b" Name="Diagram1" ZoomLevel="57">
+        <EntityTypeShape EntityType="WebDemoModel.Category" Width="1.5" PointX="0.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Customer_Addresses" Width="1.5" PointX="3" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Customer" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Order_Details" Width="1.5" PointX="7.5" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Product_Variants" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Product" Width="1.5" PointX="3" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Role" Width="1.5" PointX="9.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Store_Inventory" Width="1.5" PointX="7.5" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.Store" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="WebDemoModel.User" Width="1.5" PointX="12" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="WebDemoModel.FK_Categories_Parent" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_Products_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_CustomerAddresses_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_Orders_Addresses" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_Orders_Customers" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_OrderDetails_Orders" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_OrderDetails_Variants" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_Orders_Stores" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_ProductVariants_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_StoreInventory_Variants" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="WebDemoModel.FK_StoreInventory_Stores" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

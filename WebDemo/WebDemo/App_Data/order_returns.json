@@ -1,0 +1,26 @@
+[
+  {
+    "orderId": 24,
+    "orderCode": "ORD-20261105-A84E50B4",
+    "customerName": "Nguyễn Thị My",
+    "phone": "0392850876",
+    "reason": "Không vừa size, muốn đổi sản phẩm khác",
+    "details": "Hàng còn nguyên tem mác, xin đổi sang size M",
+    "refundBank": "MBBank",
+    "refundAccount": "0987654321 - NGUYEN THI MY",
+    "createdAt": "05-11-2026 10:04:32",
+    "status": "Đang chờ duyệt đổi/trả"
+  },
+  {
+    "orderId": 24,
+    "orderCode": "ORD-20261105-A84E50B4",
+    "customerName": "Nguyễn Thị My",
+    "phone": "0392850876",
+    "reason": "Không vừa size, muốn đổi sản phẩm khác",
+    "details": "Hàng còn nguyên tem mác, xin đổi sang size M",
+    "refundBank": "MBBank",
+    "refundAccount": "0987654321 - NGUYEN THI MY",
+    "createdAt": "05-11-2026 09:58:26",
+    "status": "Đang chờ duyệt đổi/trả"
+  }
+]

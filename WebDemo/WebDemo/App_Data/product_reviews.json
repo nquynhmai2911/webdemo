@@ -1,0 +1,18 @@
+[
+  {
+    "productId": 9,
+    "username": "Myy",
+    "fullName": "Nguyễn Thị My",
+    "rating": 5,
+    "comment": "Váy rất đẹp, mặc vừa vặn và tôn dáng!",
+    "createdAt": "05-11-2026 10:04"
+  },
+  {
+    "productId": 9,
+    "username": "Myy",
+    "fullName": "Nguyễn Thị My",
+    "rating": 5,
+    "comment": "Váy rất đẹp, mặc vừa vặn và tôn dáng!",
+    "createdAt": "05-11-2026 09:58"
+  }
+]

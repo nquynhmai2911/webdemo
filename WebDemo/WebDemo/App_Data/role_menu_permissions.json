@@ -1,0 +1,46 @@
+{
+  "Admin": {
+    "dashboard": true,
+    "orders": true,
+    "revenue": true,
+    "products": true,
+    "inventory": true,
+    "categories": true,
+    "users": true,
+    "storefront": true,
+    "menu_management": true
+  },
+  "Manager": {
+    "dashboard": true,
+    "orders": true,
+    "revenue": true,
+    "products": true,
+    "inventory": true,
+    "categories": true,
+    "users": true,
+    "storefront": true,
+    "menu_management": false
+  },
+  "Staff": {
+    "dashboard": false,
+    "orders": true,
+    "revenue": false,
+    "products": true,
+    "inventory": true,
+    "categories": false,
+    "users": false,
+    "storefront": true,
+    "menu_management": false
+  },
+  "Customer": {
+    "dashboard": false,
+    "orders": false,
+    "revenue": false,
+    "products": false,
+    "inventory": false,
+    "categories": false,
+    "users": false,
+    "storefront": true,
+    "menu_management": false
+  }
+}
