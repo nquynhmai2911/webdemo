@@ -1,0 +1,73 @@
+==============================================================================
+               DANH SÁCH TÀI KHOẢN ĐĂNG NHẬP MẪU
+     HỆ THỐNG THƯƠNG MẠI ĐIỆN TỬ SUPERSTORE (WEBDEMO)
+==============================================================================
+
+Đường dẫn đăng nhập: http://localhost:2911/login.html
+
+------------------------------------------------------------------------------
+1. TÀI KHOẢN QUẢN TRỊ VIÊN CẤP CAO (ADMIN)
+------------------------------------------------------------------------------
+- Username: admin
+- Password: 123
+- Họ tên: Quản trị viên Hệ thống
+- Quyền hạn: Toàn quyền truy cập Trang Quản trị (admin.html), quản lý doanh thu,
+  quản lý người dùng, duyệt đơn hàng, quản lý kho hàng, quản lý voucher khuyến mãi.
+
+Tài khoản Admin dự phòng:
+- Username: HAadmin
+- Password: 123
+- Họ tên: HA
+
+------------------------------------------------------------------------------
+2. TÀI KHOẢN QUẢN LÝ CỬA HÀNG (MANAGER)
+------------------------------------------------------------------------------
+- Username: quanly
+- Password: 123
+- Họ tên: Quản lý Cửa hàng
+- Quyền hạn: Xem báo cáo thống kê doanh thu, kiểm tra trạng thái tồn kho, quản lý danh mục.
+
+Tài khoản Manager dự phòng:
+- Username: quanly02
+- Password: 123
+- Họ tên: Hải Anh
+
+------------------------------------------------------------------------------
+3. TÀI KHOẢN NHÂN VIÊN BÁN HÀNG (STAFF)
+------------------------------------------------------------------------------
+- Username: staff
+- Password: 123
+- Họ tên: Nhân viên Bán hàng
+- Quyền hạn: Đăng nhập vào trang Nhân viên (staff.html), xử lý đơn hàng, cập nhật số lượng kho.
+
+Tài khoản Staff dự phòng:
+- Username: nhanvien
+- Password: 123
+- Họ tên: Khánh Huyền
+
+------------------------------------------------------------------------------
+4. TÀI KHOẢN KHÁCH HÀNG THÀNH VIÊN (CUSTOMER)
+------------------------------------------------------------------------------
+- Username: Myy
+- Password: 123
+- Họ tên: Nguyễn Thị My
+- Hạng thành viên: Thành viên Vàng (350 điểm)
+
+Tài khoản Khách hàng khác:
+- Username: QuynhMai
+- Password: 123
+- Họ tên: Nguyễn Quỳnh Mai
+- Hạng thành viên: Thành viên Bạc (150 điểm)
+
+- Username: khachhang
+- Password: 123
+- Họ tên: Khách hàng VIP SuperStore
+
+------------------------------------------------------------------------------
+GHI CHÚ DÀNH CHO GIẢNG VIÊN / NGƯỜI CHẤM:
+- Hệ thống hỗ trợ tính năng Đăng ký tài khoản Khách hàng mới trực tiếp tại:
+  http://localhost:2911/login.html (Chuyển sang tab "Đăng ký").
+- Khi khách hàng đăng nhập, thanh Header trang chủ (index.html) sẽ tự động hiển thị
+  tên người dùng, điểm thưởng tích lũy và nút Đăng xuất.
+==============================================================================
+

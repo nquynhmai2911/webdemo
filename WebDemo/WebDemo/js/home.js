@@ -698,77 +698,17 @@ function renderStorefrontBanner(cfg) {
     }
 }
 
-// =========================================================================
-// COUPONS / VOUCHERS MANAGEMENT (BẢNG TRUNG GIAN & COUPONS DB)
-// =========================================================================
-function loadStorefrontCoupons() {
-    const container = document.getElementById('home-coupons-list');
-    if (!container) return;
-
-    fetch((window.API_BASE || '') + '/Admin/GetCoupons')
-        .then(res => res.json())
-        .then(res => {
-            if (res.success && res.data && res.data.length > 0) {
-                let html = '';
-                res.data.forEach(c => {
-                    const isPercent = c.discount_type === 'percentage';
-                    const discountDisplay = isPercent ? `-${c.discount_value}%` : `-${formatCurrency(c.discount_value)}`;
-                    html += `
-                        <div class="bg-gradient-to-r from-orange-50 via-amber-50 to-pink-50 border border-orange-200/80 rounded-2xl p-4 flex items-center justify-between shadow-xs hover:shadow-md transition-all group">
-                            <div class="flex items-center gap-3">
-                                <div class="w-12 h-12 bg-gradient-to-br from-brand-orange to-brand-DEFAULT text-white rounded-xl flex flex-col items-center justify-center font-black text-xs shadow-sm group-hover:scale-105 transition-transform">
-                                    <i class="fas fa-gift text-sm mb-0.5"></i>
-                                    <span>${discountDisplay}</span>
-                                </div>
-                                <div>
-                                    <div class="font-extrabold text-gray-900 text-sm tracking-wider font-mono">${c.coupon_code}</div>
-                                    <p class="text-[11px] text-gray-600 line-clamp-1">${c.description || 'Ưu đãi đặt hàng'}</p>
-                                    <span class="text-[10px] text-emerald-600 font-medium"><i class="fas fa-check-circle mr-1"></i>Đơn từ ${formatCurrency(c.min_order_value || 0)}</span>
-                                </div>
-                            </div>
-                            <button type="button" onclick="copyCouponCode('${c.coupon_code}')" class="px-3.5 py-1.5 bg-white text-brand-orange border border-brand-orange text-xs font-bold rounded-xl hover:bg-brand-orange hover:text-white transition-all shadow-xs active:scale-95 shrink-0">
-                                Lưu mã
-                            </button>
-                        </div>
-                    `;
-                });
-                container.innerHTML = html;
-            } else {
-                const sec = document.getElementById('coupons-section');
-                if (sec) sec.style.display = 'none';
-            }
-        })
-        .catch(() => {
-            const sec = document.getElementById('coupons-section');
-            if (sec) sec.style.display = 'none';
-        });
-}
-
-function copyCouponCode(code) {
-    if (navigator.clipboard) {
-        navigator.clipboard.writeText(code);
-    }
-    if (typeof showToast === 'function') {
-        showToast(`Đã lưu mã giảm giá "${code}" vào bộ nhớ tạm!`, 'success');
-    } else {
-        alert(`Đã lưu mã giảm giá "${code}"!`);
-    }
-}
-
 // Init
 document.addEventListener('DOMContentLoaded', () => {
     loadStorefrontProducts();
     loadStorefrontCategories();
-    loadStorefrontCoupons();
     loadStorefrontBanner();
 });
 
 // Export to window
 window.loadStorefrontProducts = loadStorefrontProducts;
 window.loadStorefrontCategories = loadStorefrontCategories;
-window.loadStorefrontCoupons = loadStorefrontCoupons;
 window.loadStorefrontBanner = loadStorefrontBanner;
-window.copyCouponCode = copyCouponCode;
 window.selectStoreCategory = selectStoreCategory;
 window.addToCart = addToCart;
 window.buyNow = buyNow;

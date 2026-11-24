@@ -1,0 +1,88 @@
+==============================================================================
+               HƯỚNG DẪN CÀI ĐẶT VÀ KHỞI CHẠY DỰ ÁN
+     ĐỒ ÁN LẬP TRÌNH WEB - WEBSITE THƯƠNG MẠI ĐIỆN TỬ SUPERSTORE
+==============================================================================
+
+Kính gửi: Quý Thầy / Cô và Các bạn sinh viên,
+
+Dự án này được xây dựng trên nền tảng:
+- Backend: ASP.NET MVC (.NET Framework 4.8), Entity Framework 6 (Database-First), C# RESTful Web API
+- Frontend: HTML5, TailwindCSS, FontAwesome, JavaScript Fetch API (Mô hình Decoupled SPA hiện đại)
+- Cơ sở dữ liệu: Microsoft SQL Server (21 bảng chuẩn hóa 3NF, đầy đủ bảng trung gian Many-to-Many)
+
+------------------------------------------------------------------------------
+I. HƯỚNG DẪN KHỞI CHẠY NHANH NHẤT (CHỈ CẦN 2 BƯỚC)
+------------------------------------------------------------------------------
+
+BƯỚC 1: KHỞI TẠO CƠ SỞ DỮ LIỆU SQL SERVER
+1. Mở phần mềm SQL Server Management Studio (SSMS) và kết nối tới máy chủ SQL Server của Thầy/Cô (thường là ".\SQLEXPRESS" hoặc "localhost").
+2. Mở file "WebDemo_Full_Database.sql" (nằm ngay thư mục gốc của dự án).
+3. Nhấn phím F5 (hoặc nút "Execute") để thực thi.
+   * Script sẽ tự động tạo cơ sở dữ liệu [WebDemo], thiết lập 21 bảng liên kết chuẩn và chèn đầy đủ dữ liệu mẫu (sản phẩm, biến thể, mã giảm giá, đánh giá sao, đơn hàng...).
+
+BƯỚC 2: KHỞI ĐỘNG MÁY CHỦ BẰNG 1-CLICK
+1. Nhấp đúp chuột vào file:
+   👉 "start_server_port_2911.bat"
+2. File thực thi sẽ tự động khởi động máy chủ IIS Express trên cổng 2911 và tự động mở trình duyệt web tại trang chủ:
+   👉 http://localhost:2911/index.html
+
+* LƯU Ý: Vui lòng giữ cửa sổ dòng lệnh (cmd) mở trong suốt quá trình sử dụng / chấm bài.
+
+------------------------------------------------------------------------------
+II. HƯỚNG DẪN KHỞI CHẠY BẰNG VISUAL STUDIO (ĐỂ CHẤM CODE C#)
+------------------------------------------------------------------------------
+1. Mở file Solution: "WebDemo.sln" bằng Visual Studio (2019, 2022 hoặc mới hơn).
+2. Kiểm tra chuỗi kết nối CSDL trong file "WebDemo\WebDemo\Web.config":
+   - Chuỗi kết nối đang sử dụng có tên: "WebDemoEntities2"
+   - Mặc định: data source=.\SQLEXPRESS;initial catalog=WebDemo;integrated security=True
+   - Nếu máy Thầy/Cô dùng Server Name khác (như "." hoặc "localhost"), xin vui lòng chỉnh lại tham số "data source=..." cho phù hợp.
+3. Nhấn Ctrl + Shift + B để Build solution (Đã đính kèm sẵn thư mục packages đầy đủ, không lo lỗi thiếu thư viện).
+4. Nhấn phím F5 (hoặc Ctrl + F5) để chạy website.
+
+------------------------------------------------------------------------------
+III. DANH SÁCH ĐƯỜNG DẪN CÁC TRANG CHỨC NĂNG
+------------------------------------------------------------------------------
+- Trang chủ mua sắm (Storefront Khách hàng):
+  http://localhost:2911/index.html
+  (Xem danh mục, voucher giảm giá, lọc giá, tìm kiếm, xem chi tiết xuất xứ & bảo hành, chọn màu sắc trực quan, thả tim yêu thích, giỏ hàng, mua ngay...)
+
+- Trang Đăng nhập & Đăng ký:
+  http://localhost:2911/login.html
+
+- Trang Quản trị Hệ thống (Dành cho Admin & Quản lý):
+  http://localhost:2911/admin.html
+  (Dashboard doanh thu, biểu đồ tăng trưởng, quản lý sản phẩm & biến thể, duyệt đơn hàng, cập nhật trạng thái giao hàng, quản lý voucher...)
+
+- Trang Nhân viên Bán hàng (Dành cho Staff):
+  http://localhost:2911/staff.html
+  (Xem tồn kho chi nhánh, xác nhận đơn hàng, hỗ trợ đổi trả...)
+
+------------------------------------------------------------------------------
+IV. THÔNG TIN TÀI KHOẢN ĐĂNG NHẬP MẪU
+------------------------------------------------------------------------------
+Xin vui lòng xem chi tiết trong file: "TAI_KHOAN_DANG_NHAP.txt"
+
+1. Tài khoản QUẢN TRỊ VIÊN (ADMIN):
+   - Tên đăng nhập: admin
+   - Mật khẩu: 123
+   - Quyền hạn: Toàn quyền hệ thống
+
+2. Tài khoản NHÂN VIÊN BÁN HÀNG (STAFF):
+   - Tên đăng nhập: staff
+   - Mật khẩu: 123
+   - Quyền hạn: Quản lý đơn hàng, kho chi nhánh
+
+3. Tài khoản QUẢN LÝ (MANAGER):
+   - Tên đăng nhập: quanly
+   - Mật khẩu: 123
+   - Quyền hạn: Báo cáo, thống kê doanh thu
+
+4. Tài khoản KHÁCH HÀNG (CUSTOMER):
+   - Tên đăng nhập: Myy   (hoặc QuynhMai)
+   - Mật khẩu: 123
+   - Quyền hạn: Mua sắm, đánh giá sản phẩm, quản lý sổ địa chỉ
+
+==============================================================================
+Kính chúc Thầy / Cô có trải nghiệm chấm bài thuận lợi và đạt kết quả tốt nhất!
+==============================================================================
+
